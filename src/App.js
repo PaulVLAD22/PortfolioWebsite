@@ -1,10 +1,14 @@
 import './App.css';
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router} from 'react-router-dom'
+import Sidebar from './components/SideBar';
+import Home from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="App-logo">Yo</h1>
-    </div>
+    <Router>
+      <Home/>
+    </Router>
   );
 }
 
