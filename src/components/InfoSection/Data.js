@@ -1,4 +1,4 @@
-export const homeObjOne = {
+export const homeObjTwo = {
   id:'about',
   lightBg:true,
   lightText:false,
@@ -15,7 +15,7 @@ export const homeObjOne = {
   darkText: true
 }
 
-export const homeObjTwo = {
+export const homeObjOne = {
   id:'discover',
   lightBg:false,
   lightText:true,
@@ -34,9 +34,9 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   id:'signup',
-  lightBg:true,
-  lightText:false,
-  lightTextDesc:false,
+  lightBg:false,
+  lightText:true,
+  lightTextDesc:true,
   topLine:'Premium Bank',
   headline:'Unlimited Transaction with zero fees',
   description:'Get acces to out exclusive app that allows you to send unlimited transactions without getting charged any fees',
