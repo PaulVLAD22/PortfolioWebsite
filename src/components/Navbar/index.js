@@ -35,33 +35,36 @@ const Navbar = ({toggle,homeNav}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about"
+            <NavLinks to="education"
               smooth={true} duration={500} spy={true}
-              exact='true' offset={-80}>About
+              exact='true' offset={-80}>Education
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover"
+              <NavLinks to="skills"
               smooth={true} duration={500} spy={true}
-              exact='true' offset={-80}>Discover
+              exact='true' offset={-80}>Skills
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services"
+            <NavLinks to="projects"
               smooth={true} duration={500} spy={true}
-              exact='true' offset={-80}>Services
+              exact='true' offset={-80}>Projects
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="signup"
+              <NavLinks to="others"
               smooth={true} duration={500} spy={true}
-              exact='true' offset={-80}>Sign Up
+              exact='true' offset={-80}>Others
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="footer"
+              smooth={true} duration={500} spy={true}
+              exact='true' offset={-800}>Contact
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </IconContext.Provider>

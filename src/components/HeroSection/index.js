@@ -18,8 +18,10 @@ const HeroSection = () => {
           Munteanu Vlad Paul, University of Bucharest, Computer Science
         </HeroP>
         <HeroBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
-            Get started {hover ? <ArrowForward/> : <ArrowRight/>}
+          <Button to="education" onMouseEnter={onHover} onMouseLeave={onHover} dark={true} primary={true}
+          smooth={true} duration={500} spy={true}
+          exact='true' offset={-80}>
+            Dive In{hover ? <ArrowForward/> : <ArrowRight/>}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

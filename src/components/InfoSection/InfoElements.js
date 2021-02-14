@@ -8,6 +8,7 @@ export const InfoContainer = styled.div`
   }
 `
 export const InfoWrapper = styled.div`
+
   display:grid;
   z-index:1;
   height:860px;
@@ -45,13 +46,16 @@ export const Column2 = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  max-width:540px;
+  max-width:550px;
   padding-top:0;
   padding-bottom: 60px;
+  @media screen and (max-width:1200px){
+    max-width:450px;
+  }
 `
 
 export const TopLine = styled.p`
-  color:#01bf71;
+  color:#1B949A;
   font-size:16px;
   line-height:16px;
   font-weight:700;
@@ -72,11 +76,19 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle=styled.p`
-  max-width:440px;
+  max-width:550px;
   margin-bottom:35px;
   font-size:18px;
   line-height:24px;
   color:${({darkText})=> (darkText ? '#010606' : 'white')};
+
+  @media screen and (max-width:1000px){
+    max-width:350px;
+  }
+
+  @media screen and (max-width:768px){
+    max-width:400px;
+  }
 `
 
 export const BtnWrap = styled.div`
@@ -85,7 +97,7 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-  max-width:550px;
+  max-width:500px;
   height:100%;
 `
 

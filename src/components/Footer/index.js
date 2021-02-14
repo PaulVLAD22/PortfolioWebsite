@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import {FooterContainer,FooterWrap,FooterLinksContainer,
   FooterLinksWrapper,FooterLinkItems,FooterLinkTitle,FooterLink,SocialMedia,
   SocialMediaWrap,SocialLogo,SocialIconLink,SocialIcons} from './FooterElements'
@@ -7,7 +7,7 @@ import {FooterContainer,FooterWrap,FooterLinksContainer,
 
   const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
@@ -19,6 +19,10 @@ import {FooterContainer,FooterWrap,FooterLinksContainer,
               <SocialIconLink href="//www.linkedin.com/in/vlad-paul-munteanu-738850187/" target="_blank"
               aria-label="Linkedin">
               <FaLinkedin/>
+              </SocialIconLink>
+              <SocialIconLink href="//www.github.com/PaulVLAD22" target="_blank"
+              aria-label="Github">
+                <FaGithub/>
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

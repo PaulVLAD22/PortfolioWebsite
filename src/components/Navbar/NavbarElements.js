@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   top:0;
   z-index:10;
   margin-top:${({homeNav})=>(homeNav ? "-80px" : "0px" )};
-
+  
   @media screen and (max-width:960px){
     transition: 0.8s all ease;
   }
@@ -35,12 +35,13 @@ export const NavLogo=styled(LinkR)`
   color:#57FEFF;
   justify-self:flex-start;
   cursor:pointer;
-  font-size:1.5rem;
+  font-size:1.8rem;
   display:flex;
   align-items:center;
   margin-left:24px;
   font-weight:bold;
   text-decoration:none;
+  font-family:'Courier New', Courier, monospace;
   
 `
 export const MobileIcon= styled.div`
@@ -81,7 +82,14 @@ export const NavLinks=styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor:pointer;
-   
+  transition:all 0.2s ease-in-out;
+  
+  &:hover{
+    
+    transform:scale(1.2);
+    transition:all 0.25s ease-in-out;
+  }
+  
   &.active{
     border-bottom: 5px solid #57FEFF;
   }
