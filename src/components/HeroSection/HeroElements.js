@@ -53,8 +53,13 @@ export const HeroContent = styled.div`
 `
 
 export const HeroH1 = styled.h1`
+text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
+	  -3px 0px 7px rgba(81,67,21,0.8), 
+	  0px 4px 7px rgba(81,67,21,0.8);
+  font-family:'Courier New', Courier, monospace;
   color:white;
-  font-size:48px;
+  font-size:64px;
+  font-style:italic;
   text-align:center;
   @media screen and (max-width:768px){
     font-size:40px;
@@ -65,6 +70,11 @@ export const HeroH1 = styled.h1`
 `
 
 export const HeroP = styled.p`
+text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
+	  -3px 0px 7px rgba(81,67,21,0.8), 
+	  0px 4px 7px rgba(81,67,21,0.8);
+  font-family:'Courier New', Courier, monospace;
+  font-style:italic;
   margin-top:24px;
   color:white;
   font-size:24px;

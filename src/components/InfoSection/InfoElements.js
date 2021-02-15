@@ -105,3 +105,8 @@ export const Img= styled.img`
   width:100%;
   margin:0 0 10px 0;
 `
+
+export const OtherH2=styled.h2`
+  font-size:24px;
+  margin-bottom:24px;
+`

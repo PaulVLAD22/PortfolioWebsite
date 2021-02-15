@@ -8,6 +8,7 @@ import { homeObjTwo } from '../components/InfoSection/Data'
 import { homeObjThree } from '../components/InfoSection/Data'
 import Services from '../components/Education'
 import Education from '../components/Education'
+import Others from '../components/InfoSection/Others'
 const Home = () => {
   const [isOpen,setIsOpen]=useState(false)
 
@@ -23,7 +24,7 @@ const Home = () => {
       <Education></Education>
       <InfoSection {...homeObjOne}/>
       <InfoSection {...homeObjTwo}/>
-      <InfoSection {...homeObjThree}/>
+      <Others {...homeObjThree}/>
     </>
   )
 }
