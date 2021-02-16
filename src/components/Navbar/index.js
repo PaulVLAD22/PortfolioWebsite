@@ -28,7 +28,7 @@ const Navbar = ({toggle,homeNav}) => {
     <IconContext.Provider value={{ color:'white' }}>
       <Nav scrollNav={scrollNav} homeNav={homeNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>Portfolio Website
+          <NavLogo to="/" onClick={toggleHome}>Portfolio
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars/>
