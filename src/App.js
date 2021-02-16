@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
 import Sidebar from './components/SideBar';
 import Home from './pages';
-import SigninPage from './pages/signin'
 import Footer from './components/Footer';
+import ProjectsPage from './pages/ProjectsPage';
 
 function App() {
   const [isOpen,setIsOpen]=useState(false)
@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" component={Home} exact></Route>
-        <Route path="/signin" component={SigninPage} exact></Route>
+        <Route path="/projects" component={ProjectsPage} exact></Route>
       </Switch>
       <Footer></Footer>
     </Router>

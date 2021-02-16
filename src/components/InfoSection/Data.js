@@ -10,8 +10,6 @@ export const homeObjOne = {
   imgStart:true,
   img: require('../../images/svg-4.svg').default,
   alt: 'Car',
-  dark: true,
-  primary: true,
   darkText: false
 }
 
@@ -24,11 +22,9 @@ export const homeObjTwo = {
   headline:'Projects',
   description:'In my free time I like expanding the array of skills I get from university to learn different technologies online and use them in projects.',
   buttonLabel:'Check Out',
-  imgStart:true,
+  imgStart:false,
   img: require('../../images/svg-5.svg').default,
   alt: 'Car',
-  dark: true,
-  primary: false,
   darkText: true
 }
 
@@ -40,11 +36,10 @@ export const homeObjThree = {
   topLine:'Programming Courses/Competitions..',
   headline:'Others',
   description:'',
-  buttonLabel:'Get Started',
+  buttonLabel:'',
   imgStart:true,
   img: require('../../images/svg-3.svg').default,
   alt: 'Car',
-  dark: true,
-  primary: true,
-  darkText: false
+  darkText: false,
+  dark:true
 }

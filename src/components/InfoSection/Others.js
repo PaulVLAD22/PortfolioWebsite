@@ -11,12 +11,9 @@ imgStart,
 topLine,
 lightText,
 headline,
-darkText,
-description,
 buttonLabel,
 img,
 alt,
-primary,
 dark,
 dark2}) => {
 
@@ -35,12 +32,6 @@ dark2}) => {
                     <li>1 Month Android App Development Course - Certification issued by Romania's Ministry of National Education</li>
                   </ul>
                   <br></br>
-                  <ul><OtherH2>Competitions</OtherH2>
-                    <li>Google Kickstart 2020</li>
-                    <li>Google HashCode 2020</li>
-                    <li>Google CodeJam 2020</li>
-                    <li>Reply Challenge 2020</li>
-                  </ul>
                 </Subtitle>
                 { buttonLabel!='' &&
                 <BtnWrap>

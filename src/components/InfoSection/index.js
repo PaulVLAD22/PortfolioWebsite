@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button } from '../ButtonElement'
 import { ImgWrap } from './InfoElements'
 import {InfoWrapper, InfoContainer,InfoRow,Column1,Column2,TextWrapper,
-TopLine,Heading,Subtitle,BtnWrap,Img} from './InfoElements'
+TopLine,Heading,Subtitle,BtnWrap,Img,BtnLink} from './InfoElements'
+
 
 const InfoSection = ({
 lightBg,
@@ -15,11 +15,8 @@ darkText,
 description,
 buttonLabel,
 img,
-alt,
-primary,
-dark,
-dark2}) => {
-
+alt}) => {
+  
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -32,15 +29,9 @@ dark2}) => {
                 <Subtitle darkText={darkText} >{description}</Subtitle>
                 { buttonLabel!='' &&
                 <BtnWrap>
-                  <Button to="home" 
-                  smooth={true} 
-                  duration={500} 
-                  spy={true} 
-                  offset={-80}
-                  primary={true}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2 ? 1 : 0}>{buttonLabel} 
-                  </Button>
+                  <BtnLink to="/projects"
+                  >{buttonLabel} 
+                  </BtnLink>
                 </BtnWrap>
                 }
               </TextWrapper>

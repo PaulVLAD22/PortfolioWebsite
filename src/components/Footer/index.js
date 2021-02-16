@@ -1,8 +1,7 @@
 import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import {FooterContainer,FooterWrap,FooterLinksContainer,
-  FooterLinksWrapper,FooterLinkItems,FooterLinkTitle,FooterLink,SocialMedia,
-  SocialMediaWrap,SocialLogo,SocialIconLink,SocialIcons} from './FooterElements'
+import {FooterContainer,FooterWrap,SocialMedia,
+  SocialMediaWrap,SocialIconLink,SocialIcons} from './FooterElements'
 
 
   const Footer = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import Icon1 from '../../images/school-bag.svg'
-import Icon2 from '../../images/education.svg'
+import Icon1 from '../../images/svg-1.svg'
+import Icon2 from '../../images/svg-2.svg'
 
 
 import {EducationContainer,EducationH1,EducationWrapper,EducationCard,

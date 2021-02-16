@@ -1,33 +1,35 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
-export const InfoContainer = styled.div`
+import { FaGithub} from 'react-icons/fa'
+
+export const ProjectContainer = styled.div`
   color:white;
   background:${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')};
   @media screen and (max-width:768px){
     padding:100px 0;
   }
 `
-export const InfoWrapper = styled.div`
+export const ProjectWrapper = styled.div`
 
   display:grid;
   z-index:1;
   height:860px;
   width:100%;
-  max-width:1100px;
   margin-right:auto;
   margin-left:auto;
   padding:0 24px;
   justify-content:center;
 `
 
-export const InfoRow = styled.div`
+export const ProjectRow = styled.div`
+  padding:24px 0;
   display:grid;
-  grid-auto-columns:minmax(auto,1fr);
   align-items: center;
+  grid-gap:1rem;
   grid-template-areas:${({imgStart})=>imgStart ? `'col2 col1'` :
   `'col1 col2'`};
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:1400px){
     grid-template-areas:${({imgStart})=>
     (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
   }
@@ -37,12 +39,18 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+  grid-template:1fr;
 `
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+
 `
 
 export const TextWrapper = styled.div`
@@ -54,7 +62,7 @@ export const TextWrapper = styled.div`
   }
 `
 
-export const TopLine = styled.p`
+export const TopLineP = styled.p`
   color:#1B949A;
   font-size:16px;
   line-height:16px;
@@ -74,9 +82,14 @@ export const Heading = styled.h1`
     font-size:32px;
   }
 `
+export const ProjectH2=styled.h2`
+  font-size:18px;
+  color:${({lightText})=>(lightText ? '#f7f8fa' : '#010606')};
+`
 
-export const Subtitle=styled.p`
+export const Description=styled.p`
   max-width:550px;
+  margin-top:35px;
   margin-bottom:35px;
   font-size:18px;
   line-height:24px;
@@ -97,18 +110,24 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-  max-width:500px;
+  max-width:70%;
   height:100%;
+  padding:0 24px;
 `
 
 export const Img= styled.img`
   width:100%;
   margin:0 0 10px 0;
+  transition:0.2s ease-in-out;
+  &:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+    transition:0.2s ease-in-out;
+  }
 `
-
-export const OtherH2=styled.h2`
-  font-size:24px;
-  margin-bottom:24px;
+export const SocialIconLink = styled.a`
+  color:${({lightText})=>(lightText ? '#f7f8fa' : '#010606')};
+  font-size:35px;
 `
 
 export const BtnLink = styled(LinkR)`
@@ -128,3 +147,32 @@ export const BtnLink = styled(LinkR)`
     background:#1B949A;
   }
 `
+export const SlideshowButton = styled.button`
+  font-size:2rem;
+  background:#57FEFF;
+  font-weight:600;
+  outline:none;
+  padding:3px;
+  transition:all 0.2s ease-in-out;
+  border:none;
+  border-radius:10px;
+  &:hover{
+    cursor:pointer;
+    transition:all 0.2s ease-in-out;
+    background:#1B949A;
+  }
+
+`
+export const TopLine=({topLine,githubLink,lightText})=>{
+  return (
+    <>
+    <TopLineP>{topLine}	&nbsp;	&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <SocialIconLink href={githubLink} target="_blank" lightText={lightText}
+      aria-label="Github">
+      <FaGithub/>
+    </SocialIconLink>
+    </TopLineP>
+    </>
+    
+  )
+}
