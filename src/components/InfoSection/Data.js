@@ -20,7 +20,7 @@ export const homeObjTwo = {
   lightTextDesc:false,
   topLine:'Schoolwork/Peronal Projects',
   headline:'Projects',
-  description:'In my free time I like expanding the array of skills I get from university to learn different technologies online and use them in projects.',
+  description:'In my free time I like expanding the array of skills I get from university by learning different technologies online and testing my obtained knowledge creating projects.',
   buttonLabel:'Check Out',
   imgStart:false,
   img: require('../../images/svg-5.svg').default,
