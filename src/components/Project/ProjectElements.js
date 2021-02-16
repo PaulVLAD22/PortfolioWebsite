@@ -123,7 +123,7 @@ export const Img= styled.img`
   transition:0.2s ease-in-out;
   &:hover{
     cursor:pointer;
-    transform:scale(1.5);
+    transform:scale(1.3);
     transition:0.2s ease-in-out;
   }
 `
