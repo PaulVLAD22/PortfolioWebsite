@@ -5,7 +5,7 @@ import { FaGithub} from 'react-icons/fa'
 export const ProjectContainer = styled.div`
   color:white;
   background:${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')};
-  @media screen and (max-width:768px){
+  @media screen and (max-width:1500px){
     padding:100px 0;
   }
 `
@@ -13,8 +13,7 @@ export const ProjectWrapper = styled.div`
 
   display:grid;
   z-index:1;
-  height:860px;
-  width:100%;
+  height:900px;
   margin-right:auto;
   margin-left:auto;
   padding:0 24px;
@@ -22,7 +21,7 @@ export const ProjectWrapper = styled.div`
 `
 
 export const ProjectRow = styled.div`
-  padding:24px 0;
+  padding:28px 0;
   display:grid;
   align-items: center;
   grid-gap:1rem;
@@ -121,7 +120,7 @@ export const Img= styled.img`
   transition:0.2s ease-in-out;
   &:hover{
     cursor:pointer;
-    transform:scale(1.2);
+    transform:scale(1.5);
     transition:0.2s ease-in-out;
   }
 `

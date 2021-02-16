@@ -6,7 +6,6 @@ import InfoSection from '../components/InfoSection'
 import { homeObjOne } from '../components/InfoSection/Data'
 import { homeObjTwo } from '../components/InfoSection/Data'
 import { homeObjThree } from '../components/InfoSection/Data'
-import Services from '../components/Education'
 import Education from '../components/Education'
 import Others from '../components/InfoSection/Others'
 const Home = () => {

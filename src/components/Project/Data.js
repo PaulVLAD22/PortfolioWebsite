@@ -24,6 +24,7 @@ export const projectTwo = {
   description:"To do tasks type website with back-end. Each account has 3 types of tasks, active, private and completed. By entering a user's username you can see his active and completed tasks, but not private.",
   imgStart:false,
   img: [require('../../images/projectTwo/img-1.png').default,require('../../images/projectTwo/img-2.png').default],
+  imgLinks:['https://i.imgur.com/fRBIKrf.png','https://i.imgur.com/vaFsQnH.png'],
   alt: 'To-do Tasks Website',
   githubLink:"//www.github.com/PaulVLAD22/TechToDo---Website"
   

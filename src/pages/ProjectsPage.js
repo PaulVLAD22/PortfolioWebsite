@@ -1,5 +1,4 @@
-import React,{useState} from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react'
 import { projectOne, projectTwo } from '../components/Project/Data'
 import Project from '../components/Project'
 
