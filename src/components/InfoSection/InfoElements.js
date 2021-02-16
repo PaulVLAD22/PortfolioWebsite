@@ -16,7 +16,7 @@ export const InfoWrapper = styled.div`
   max-width:1100px;
   margin-right:auto;
   margin-left:auto;
-  padding:0 24px;
+  
   justify-content:center;
 `
 
@@ -99,6 +99,9 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width:500px;
   height:100%;
+  @media screen and (max-width:768px){
+    width:80%;
+  }
 `
 
 export const Img= styled.img`

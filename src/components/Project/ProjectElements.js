@@ -101,6 +101,9 @@ export const Description=styled.p`
   @media screen and (max-width:768px){
     max-width:400px;
   }
+  @media screen and (max-width:500px){
+    max-width:350px;
+  }
 `
 
 export const BtnWrap = styled.div`
@@ -125,8 +128,12 @@ export const Img= styled.img`
   }
 `
 export const SocialIconLink = styled.a`
+  margin-left:20px;
   color:${({lightText})=>(lightText ? '#f7f8fa' : '#010606')};
   font-size:35px;
+  @media screen and (max-width:400px){
+    margin-left:0px;
+  }
 `
 
 export const BtnLink = styled(LinkR)`
@@ -165,7 +172,7 @@ export const SlideshowButton = styled.button`
 export const TopLine=({topLine,githubLink,lightText})=>{
   return (
     <>
-    <TopLineP>{topLine}	&nbsp;	&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <TopLineP>{topLine}
     <SocialIconLink href={githubLink} target="_blank" lightText={lightText}
       aria-label="Github">
       <FaGithub/>
