@@ -4,18 +4,8 @@ import {InfoWrapper, InfoContainer,InfoRow,Column1,Column2,TextWrapper,
 TopLine,Heading,Subtitle,BtnWrap,Img,BtnLink} from './InfoElements'
 
 
-const InfoSection = ({
-lightBg,
-id,
-imgStart,
-topLine,
-lightText,
-headline,
-darkText,
-description,
-buttonLabel,
-img,
-alt}) => {
+const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,
+ description,buttonLabel,img,alt}) => {
   
   return (
     <>
@@ -26,7 +16,7 @@ alt}) => {
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText} >{description}</Subtitle>
+                <Subtitle darkText={!lightText} >{description}</Subtitle>
                 { buttonLabel!='' &&
                 <BtnWrap>
                   <BtnLink to="/projects"

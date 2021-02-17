@@ -1,10 +1,9 @@
 import React from 'react'
 import Icon1 from '../../images/svg-1.svg'
 import Icon2 from '../../images/svg-2.svg'
-
-
 import {EducationContainer,EducationH1,EducationWrapper,EducationCard,
   EducationIcon,EducationH2,EducationP} from './EducationElements'
+  
 const Education = () => {
   return (
     <EducationContainer id="education">
