@@ -18,6 +18,9 @@ export const ProjectWrapper = styled.div`
   margin-left:auto;
   padding:0 24px;
   justify-content:center;
+  @media screen and (max-width:1000px){
+    padding:0;
+  }
 `
 
 export const ProjectRow = styled.div`
@@ -30,7 +33,8 @@ export const ProjectRow = styled.div`
 
   @media screen and (max-width:1400px){
     grid-template-areas:${({imgStart})=>
-    (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
+    (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    grid-gap:0rem;
   }
 `
 
@@ -39,16 +43,16 @@ export const Column1 = styled.div`
   padding: 0 15px;
   grid-area: col1;
   grid-template:1fr;
+  display:flex;
+  @media screen and (max-width:1000px){
+    padding:0px 50px;
+  }
 `
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:center;
 
 `
 
@@ -106,26 +110,17 @@ export const Description=styled.p`
   }
 `
 
-export const BtnWrap = styled.div`
-  display:flex;
-  justify-content:flex-start;
-`
-
 export const ImgWrap = styled.div`
-  max-width:70%;
+  max-width:100%;
   height:100%;
   padding:0 24px;
+  position:relative;
 `
 
 export const Img= styled.img`
-  width:100%;
-  margin:0 0 10px 0;
-  transition:0.2s ease-in-out;
-  &:hover{
-    cursor:pointer;
-    transform:scale(1.3);
-    transition:0.2s ease-in-out;
-  }
+  max-width:100%;
+  border-radius:15px;
+  cursor:pointer;
 `
 export const SocialIconLink = styled.a`
   margin-left:20px;
@@ -153,19 +148,22 @@ export const BtnLink = styled(LinkR)`
     background:#1B949A;
   }
 `
-export const SlideshowButton = styled.button`
-  font-size:2rem;
-  background:#57FEFF;
-  font-weight:600;
-  outline:none;
-  padding:3px;
-  transition:all 0.2s ease-in-out;
-  border:none;
-  border-radius:10px;
+export const SlideshowButton = styled.a`
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  right:${({right})=>(right ? '25px' : '')};
   &:hover{
-    cursor:pointer;
-    transition:all 0.2s ease-in-out;
-    background:#1B949A;
+    background-color: rgba(0,0,0,0.8);
   }
 
 `

@@ -36,21 +36,12 @@ const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,descriptio
               </TextWrapper>
             </Column1>
             <Column2>
-              <BtnWrap>
-              <SlideshowButton onClick={decreaseIndex}>&#60;</SlideshowButton>
-              </BtnWrap>
               <ImgWrap>
-                <Spring
-                  from = {{opacity:0}}
-                  to ={{opacity:1}}
-                  >{props=>(
-                  <Img src={img[imgIndex]} alt={alt} id="img" style={props} onClick={openImg}>
-                  </Img>)}
-                </Spring>
+              <SlideshowButton onClick={decreaseIndex}>&#10094;</SlideshowButton>
+              <SlideshowButton right={true} onClick={increaseIndex} >&#10095;</SlideshowButton>
+                <Img src={img[imgIndex]} alt={alt} id="img" onClick={openImg}>
+                </Img>
               </ImgWrap>
-              <BtnWrap>
-              <SlideshowButton onClick={increaseIndex}>&#62;</SlideshowButton>
-              </BtnWrap>
             </Column2>
           </ProjectRow>
         </ProjectWrapper>
