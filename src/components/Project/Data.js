@@ -2,7 +2,7 @@ export const projectOne = {
   lightBg:false,
   lightText:true,
   topLine:'E-Commerce Website',
-  frontEnd:"HTML/CSS/JS(React)",
+  frontEnd:"React",
   backEnd:"Jquery/PHP/MySQL",
   description:"Responsive e-commerce website project created from scratch in order for me to practice React basics, PHP and MySQL.  User accounts can add products to cart and order. Admin accounts can add products or remove them.",
   imgStart:false,

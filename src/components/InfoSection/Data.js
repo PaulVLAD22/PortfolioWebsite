@@ -5,7 +5,7 @@ export const homeObjOne = {
   lightTextDesc:true,
   topLine:'Programming Languages',
   headline:'Skills',
-  description:"I'm best at Web development (HTML/CSS/JS/PHP), C++, Java, Object Oriented Programming in general but also have knowledge in R, Python, Algorithms and Data Strutures.",
+  description:"I'm best at Web development (HTML/CSS/JS/PHP), C++, Java, Object Oriented Programming in general but also have knowledge in R, Functional Programming, Python, Algorithms and Data Strutures.",
   buttonLabel:'',
   imgStart:true,
   img: require('../../images/svg-4.svg').default,
