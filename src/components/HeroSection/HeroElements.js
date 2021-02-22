@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {MdKeyboardArrowRight,MdArrowForward} from 'react-icons/md'
+import {Link} from 'react-scroll'
 
 export const HeroContainer = styled.div`
   background:#0c0c0c;
@@ -23,7 +24,6 @@ export const HeroContainer = styled.div`
     z-index:2;
   }
 `
-
 
 export const HeroBg = styled.div`
   position:absolute;
@@ -87,7 +87,25 @@ text-shadow: 3px 0px 7px rgba(81,67,21,0.8),
     font-size:16px;
   }
 `
-
+export const Herobtn = styled(Link)`
+  border-radius:50px;
+  background:#57FEFF;
+  white-space:nowrap;
+  padding:${({big})=>(big ? '14px 48px' : '12px 30px')};
+  color: ${({dark})=>(dark ? 'black' : 'white')};
+  font-size:${({fontBig})=>(fontBig ? '20px' : '16px')};
+  outline:none;
+  border:none;
+  cursor:pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:all 0.2s ease-in-out;
+  &:hover{
+    transition:all 0.2s ease-in-out;
+    background:#1B949A;
+  }
+`
 export const HeroBtnWrapper = styled.div`
   margin-top:32px;
   display:flex;

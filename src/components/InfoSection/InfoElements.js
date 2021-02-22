@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
+
 export const InfoContainer = styled.div`
   color:white;
   background:${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')};
@@ -122,7 +123,7 @@ export const BtnLink = styled(LinkR)`
   white-space:nowrap;
   padding:10px 22px;
   color:#010606;
-  font-size:16px;
+  font-size:20px;
   border:none;
   outline:none;
   cursor:pointer;

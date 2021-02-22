@@ -1,7 +1,7 @@
 import {React,useEffect,useState} from 'react'
-import {Spring} from 'react-spring/renderprops'
+
 import {ProjectContainer,ProjectWrapper,ProjectRow,Column1,Column2,
-TextWrapper,TopLine,ProjectH2,ImgWrap,Img,Description,BtnWrap,SlideshowButton} from './ProjectElements'
+TextWrapper,TopLine,ProjectH2,ImgWrap,Img,Description,SlideshowButton} from './ProjectElements'
 
 const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,description,img,imgLinks,alt,githubLink})=>{
   

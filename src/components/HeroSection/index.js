@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
 import Video from '../../videos/video.mp4'
-import {Button} from '../ButtonElement'
-import {HeroContainer, HeroBg, VideoBg,HeroContent,
-  HeroH1,HeroP,HeroBtnWrapper,ArrowForward,ArrowRight} from './HeroElements'
+import {HeroContainer, HeroBg, HeroBtn, VideoBg,HeroContent,
+  HeroH1,HeroP,HeroBtnWrapper,ArrowForward,ArrowRight, Herobtn} from './HeroElements'
 
 const HeroSection = () => {
   const [hover,setHover]=useState(false)
@@ -20,11 +19,11 @@ const HeroSection = () => {
           Munteanu Vlad Paul, University of Bucharest, Computer Science
         </HeroP>
         <HeroBtnWrapper>
-          <Button to="education" onMouseEnter={onHover} onMouseLeave={onHover} dark={true} primary={true}
+          <Herobtn to="education" onMouseEnter={onHover} onMouseLeave={onHover} dark={true} primary={true}
           smooth={true} duration={500} spy={true}
           exact='true' offset={-80}>
             Dive In{hover ? <ArrowForward/> : <ArrowRight/>}
-          </Button>
+          </Herobtn>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
