@@ -13,7 +13,8 @@ export const projectOne = {
   imgLinks:['https://i.imgur.com/vAhk7XZ.png','https://i.imgur.com/PqguZki.png','https://i.imgur.com/5nzkGxQ.png','https://i.imgur.com/hXOb87L.png','https://i.imgur.com/e5xemxR.png',
   'https://i.imgur.com/crM90GU.png','https://i.imgur.com/xqSb2bC.png','https://i.imgur.com/LUYlgcQ.png'],
   alt: 'E-Commerce Website',
-  githubLink:"//www.github.com/PaulVLAD22/e-commerce-Website"
+  githubLink:"//www.github.com/PaulVLAD22/e-commerce-Website",
+  appLink:''
 }
 export const projectTwo = {
   lightBg:true,
@@ -26,6 +27,7 @@ export const projectTwo = {
   img: [require('../../images/projectTwo/img-1.png').default,require('../../images/projectTwo/img-2.png').default],
   imgLinks:['https://i.imgur.com/fRBIKrf.png','https://i.imgur.com/vaFsQnH.png'],
   alt: 'To-do Tasks Website',
-  githubLink:"//www.github.com/PaulVLAD22/TechToDo---Website"
+  githubLink:"//www.github.com/PaulVLAD22/TechToDo---Website",
+  appLink:''
   
 }

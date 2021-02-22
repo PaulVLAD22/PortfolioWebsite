@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { FaGithub} from 'react-icons/fa'
+import {Link} from 'react-router-dom';
 
 export const ProjectContainer = styled.div`
   color:white;
@@ -148,8 +149,11 @@ export const SlideshowButton = styled.a`
   &:hover{
     background-color: rgba(0,0,0,0.8);
   }
-
 `
+export const AppLink = styled(Link)`
+  
+`
+
 export const TopLine=({topLine,githubLink,lightText})=>{
   return (
     <>

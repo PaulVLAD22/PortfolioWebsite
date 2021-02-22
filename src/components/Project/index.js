@@ -1,9 +1,9 @@
 import {React,useEffect,useState} from 'react'
 
 import {ProjectContainer,ProjectWrapper,ProjectRow,Column1,Column2,
-TextWrapper,TopLine,ProjectH2,ImgWrap,Img,Description,SlideshowButton} from './ProjectElements'
+TextWrapper,TopLine,ProjectH2,ImgWrap,Img,Description,SlideshowButton,AppLink} from './ProjectElements'
 
-const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,description,img,imgLinks,alt,githubLink})=>{
+const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,description,img,imgLinks,alt,githubLink,appLink})=>{
   
   const [imgIndex,setImgIndex]=useState(0)
 
@@ -30,6 +30,9 @@ const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,descriptio
             <Column1>
               <TextWrapper>
                 <TopLine lightText={lightText} topLine={topLine} githubLink={githubLink}></TopLine>
+                {appLink!='' &&
+                  <AppLink>Try It</AppLink>
+                }
                 <ProjectH2 lightText={lightText ? 1:0}>{"Front-End: "+frontEnd}</ProjectH2>
                 <ProjectH2 lightText={lightText ? 1:0}>{"Back-End: "+backEnd}</ProjectH2>
                 <Description darkText={!(lightText)} >{description}</Description>
