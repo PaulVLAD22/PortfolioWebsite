@@ -1,4 +1,5 @@
 import {React,useEffect,useState} from 'react'
+import { Spring } from 'react-spring/renderprops-universal'
 
 import {ProjectContainer,ProjectWrapper,ProjectRow,Column1,Column2,
 TextWrapper,TopLine,ProjectH2,ImgWrap,Img,Description,SlideshowButton,AppLink} from './ProjectElements'
@@ -39,12 +40,18 @@ const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,descriptio
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
-              <SlideshowButton onClick={decreaseIndex}>&#10094;</SlideshowButton>
-              <SlideshowButton right={true} onClick={increaseIndex} >&#10095;</SlideshowButton>
-                <Img src={img[imgIndex]} alt={alt} id="img" onClick={openImg}>
-                </Img>
-              </ImgWrap>
+              <Spring
+              from = {{opacity:0,marginTop:500}}
+              to ={{opacity:1,marginTop:0}}
+              >{props =>(
+                <ImgWrap style={props}>
+                <SlideshowButton onClick={decreaseIndex}>&#10094;</SlideshowButton>
+                <SlideshowButton right={true} onClick={increaseIndex} >&#10095;</SlideshowButton>
+                  <Img src={img[imgIndex]} alt={alt} id="img" onClick={openImg}>
+                  </Img>
+                </ImgWrap>
+              )}  
+              </Spring>
             </Column2>
           </ProjectRow>
         </ProjectWrapper>

@@ -116,6 +116,7 @@ export const ImgWrap = styled.div`
   height:100%;
   padding:0 24px;
   position:relative;
+  transition: 0.2s linear;
 `
 
 export const Img= styled.img`

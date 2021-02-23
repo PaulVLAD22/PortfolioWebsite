@@ -53,6 +53,11 @@ export const TextWrapper = styled.div`
   @media screen and (max-width:1200px){
     max-width:450px;
   }
+  @media screen and (max-width:768px){
+    max-width:450px;
+    padding-bottom:0px;
+  }
+
 `
 
 export const TopLine = styled.p`
@@ -109,7 +114,7 @@ export const ImgWrap = styled.div`
 
 export const Img= styled.img`
   width:100%;
-  margin:0 0 10px 0;
+  padding-bottom:10px;
 `
 
 export const OtherH2=styled.h2`

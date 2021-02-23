@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
-import {Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks} from './NavbarElements'
+import {Nav,NavbarContainer,MobileIcon,NavMenu,NavItem,NavLinks} from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
 
@@ -28,12 +28,13 @@ const Navbar = ({toggle,homeNav}) => {
     <IconContext.Provider value={{ color:'white' }}>
       <Nav scrollNav={scrollNav} homeNav={homeNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>Portfolio
-          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars/>
           </MobileIcon>
           <NavMenu>
+            <NavLinks onClick={toggleHome} homeButton={true}>
+              Home
+            </NavLinks>
             <NavItem>
             <NavLinks to="education"
               smooth={true} duration={500} spy={true}

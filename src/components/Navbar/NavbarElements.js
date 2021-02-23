@@ -23,7 +23,7 @@ export const Nav = styled.nav`
 export const NavbarContainer=styled.div`
   color:#fff;
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   height:80px;
   z-index:1;
   width:100%;
@@ -31,19 +31,6 @@ export const NavbarContainer=styled.div`
   max-width:1100px;
 `
 
-export const NavLogo=styled(LinkR)`
-  color:#57FEFF;
-  justify-self:flex-start;
-  cursor:pointer;
-  font-size:1.8rem;
-  display:flex;
-  align-items:center;
-  margin-left:24px;
-  font-weight:bold;
-  text-decoration:none;
-  font-family:'Courier New', Courier, monospace;
-  
-`
 export const MobileIcon= styled.div`
   display:none;
 
@@ -75,6 +62,7 @@ export const NavItem = styled.li`
   height:80px;
 `
 export const NavLinks=styled(LinkS)`
+  font-size:16px;
   color:#fff;
   display:flex;
   align-items:center;
@@ -85,9 +73,9 @@ export const NavLinks=styled(LinkS)`
   transition:all 0.2s ease-in-out;
   
   &:hover{
-    
     transform:scale(1.2);
-    transition:all 0.25s ease-in-out;
+    transition:all 0.15s ease-in-out;
+    border-bottom:${({homeButton})=>(!homeButton ? '5px solid #1B949A;' : '' )}  
   }
   
   &.active{

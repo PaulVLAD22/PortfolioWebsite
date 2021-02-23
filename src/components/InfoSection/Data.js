@@ -33,7 +33,7 @@ export const homeObjThree = {
   lightBg:false,
   lightText:true,
   lightTextDesc:true,
-  topLine:'Programming Courses/Competitions..',
+  topLine:'Programming Courses',
   headline:'Others',
   description:'',
   buttonLabel:'',
