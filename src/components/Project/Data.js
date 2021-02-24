@@ -1,10 +1,11 @@
 export const projectOne = {
+  id:1,
   lightBg:false,
   lightText:true,
   topLine:'E-Commerce Website',
   frontEnd:"React",
   backEnd:"Jquery/PHP/MySQL",
-  description:"Responsive e-commerce website project created from scratch in order for me to practice React basics, PHP and MySQL.  User accounts can add products to cart and order. Admin accounts can add products or remove them.",
+  description:"Responsive e-commerce website project created from scratch in order for me to practice React basics, PHP and MySQL.  User accounts can add products to cart, comment on products, rate them and, after entering your details, order them. Admin accounts can add products or remove them.",
   imgStart:false,
   img: [require('../../images/projectOne/img-1.png').default,require('../../images/projectOne/img-2.png').default,
   require('../../images/projectOne/img-3.png').default,require('../../images/projectOne/img-4.png').default,
@@ -17,6 +18,7 @@ export const projectOne = {
   appLink:''
 }
 export const projectTwo = {
+  id:2,
   lightBg:true,
   lightText:false,
   topLine:'To-do Tasks Website',

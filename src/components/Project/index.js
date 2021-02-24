@@ -4,8 +4,19 @@ import { Spring } from 'react-spring/renderprops-universal'
 import {ProjectContainer,ProjectWrapper,ProjectRow,Column1,Column2,
 TextWrapper,TopLine,ProjectH2,ImgWrap,Img,Description,SlideshowButton,AppLink} from './ProjectElements'
 
-const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,description,img,imgLinks,alt,githubLink,appLink})=>{
+const Project = ({id,lightBg,imgStart,topLine,lightText,frontEnd,backEnd,description,img,imgLinks,alt,githubLink,appLink})=>{
+
+  var opacity = 0;
+
+function MyFadeFunction() {
   
+   if (opacity<1) {
+      opacity += .50;
+      setTimeout(function(){MyFadeFunction()},200);
+   }
+   document.getElementById('imgWrap'+id).style.opacity = opacity;
+}
+
   const [imgIndex,setImgIndex]=useState(0)
 
   useEffect(() => {
@@ -13,13 +24,20 @@ const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,descriptio
   },[])
 
   const decreaseIndex = ()=>{
-    if (imgIndex>0)
+    
+    if (imgIndex>0){
+      MyFadeFunction();
       setImgIndex(imgIndex-1)
+    }
+    
   }
   const increaseIndex = () =>{
-    if (imgIndex<img.length-1)
+    
+    if (imgIndex<img.length-1){
+      MyFadeFunction();
       setImgIndex(imgIndex+1)
   }
+}
   const openImg = () =>{
     window.open(imgLinks[imgIndex])
   }
@@ -44,7 +62,7 @@ const Project = ({lightBg,imgStart,topLine,lightText,frontEnd,backEnd,descriptio
               from = {{opacity:0,marginTop:500}}
               to ={{opacity:1,marginTop:0}}
               >{props =>(
-                <ImgWrap style={props}>
+                <ImgWrap style={props} id={"imgWrap"+id}>
                 <SlideshowButton onClick={decreaseIndex}>&#10094;</SlideshowButton>
                 <SlideshowButton right={true} onClick={increaseIndex} >&#10095;</SlideshowButton>
                   <Img src={img[imgIndex]} alt={alt} id="img" onClick={openImg}>

@@ -32,7 +32,7 @@ const Navbar = ({toggle,homeNav}) => {
             <FaBars/>
           </MobileIcon>
           <NavMenu>
-            <NavLinks onClick={toggleHome} homeButton={true}>
+            <NavLinks to="" onClick={toggleHome} homeButton={true}>
               Home
             </NavLinks>
             <NavItem>
