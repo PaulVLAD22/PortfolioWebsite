@@ -30,7 +30,6 @@ const Project = ({
   imgLinks,
   alt,
   githubLink,
-  appLink,
 }) => {
   var opacity = 0;
 
@@ -77,7 +76,6 @@ const Project = ({
                 topLine={topLine}
                 githubLink={githubLink}
               ></TopLine>
-              {appLink != "" && <AppLink>Try It</AppLink>}
               <ProjectH2 lightText={lightText ? 1 : 0}>
                 {"Front-End: " + frontEnd}
               </ProjectH2>
@@ -88,6 +86,7 @@ const Project = ({
             </TextWrapper>
           </Column1>
           <Column2>
+          {img != [] &&
             <Spring
               from={{ opacity: 0, marginTop: 500 }}
               to={{ opacity: 1, marginTop: 0 }}
@@ -109,6 +108,7 @@ const Project = ({
                 </ImgWrap>
               )}
             </Spring>
+          }
           </Column2>
         </ProjectRow>
       </ProjectWrapper>
