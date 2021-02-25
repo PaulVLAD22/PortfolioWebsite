@@ -1,13 +1,9 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Video from '../../videos/video.mp4'
-import {HeroContainer, HeroBg, HeroBtn, VideoBg,HeroContent,
-  HeroH1,HeroP,HeroBtnWrapper,ArrowForward,ArrowRight, Herobtn} from './HeroElements'
+import {HeroContainer, HeroBg, VideoBg,HeroContent,
+  HeroH1,HeroP} from './HeroElements'
 
 const HeroSection = () => {
-  const [hover,setHover]=useState(false)
-  const onHover =()=>{
-    setHover(!hover)
-  }
   return (
     <HeroContainer id="Home">
       <HeroBg>
@@ -18,13 +14,6 @@ const HeroSection = () => {
         <HeroP>
           Munteanu Vlad Paul, University of Bucharest, Computer Science
         </HeroP>
-        <HeroBtnWrapper>
-          <Herobtn to="education" onMouseEnter={onHover} onMouseLeave={onHover} dark={true} primary={true}
-          smooth={true} duration={500} spy={true}
-          exact='true' offset={-80}>
-            Dive In{hover ? <ArrowForward/> : <ArrowRight/>}
-          </Herobtn>
-        </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
   )
