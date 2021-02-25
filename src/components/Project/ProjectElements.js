@@ -14,7 +14,7 @@ export const ProjectWrapper = styled.div`
 
   display:grid;
   z-index:1;
-  height:900px;
+  height:100vh;
   margin-right:auto;
   margin-left:auto;
   padding:0 24px;

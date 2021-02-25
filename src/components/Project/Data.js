@@ -24,7 +24,7 @@ export const projectTwo = {
   topLine:'To-do Tasks Website',
   frontEnd:"HTML/CSS/JS",
   backEnd:"PHP/MySQL",
-  description:"To do tasks type website with back-end. Each account has 3 types of tasks, active, private and completed. By entering a user's username you can see his active and completed tasks, but not private.",
+  description:"Responsive to-do list type website. Each account has 3 sections: active tasks, private tasks and completed tasks. By providing a user's username (peeking) you can't see his private tasks but you can see his active and completed ones.",
   imgStart:false,
   img: [require('../../images/projectTwo/img-1.png').default,require('../../images/projectTwo/img-2.png').default],
   imgLinks:['https://i.imgur.com/fRBIKrf.png','https://i.imgur.com/vaFsQnH.png'],
