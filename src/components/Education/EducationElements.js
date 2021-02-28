@@ -37,7 +37,7 @@ export const EducationCard = styled.div`
   border-radius: 10px;
   max-height: 340px;
   padding: 48px;
-  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.4);
 `;
 
 export const EducationIcon = styled.img`
