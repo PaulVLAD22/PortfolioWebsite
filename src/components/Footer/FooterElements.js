@@ -24,10 +24,6 @@ export const SocialMediaWrap = styled.div`
   align-items: center;
   max-width: 500px;
   margin: 40px auto 0 auto;
-
-  @media screen and (max-width: 820px) {
-    flex-direction: column;
-  }
 `;
 export const SocialIcons = styled.div`
   display: flex;
@@ -38,5 +34,5 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: white;
-  font-size: 40px;
+  font-size:50px;
 `;

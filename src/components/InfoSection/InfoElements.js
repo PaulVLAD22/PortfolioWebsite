@@ -124,16 +124,17 @@ export const BtnLink = styled(LinkR)`
   border-radius: 50px;
   background: #57feff;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 12px 20px;
   color: #010606;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     background: #1b949a;
+    transform:scale(1.02);
   }
 `;
