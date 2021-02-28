@@ -40,12 +40,13 @@ export const projectTwo = {
   frontEnd: "java.swing",
   backEnd: "Java",
   description:
-    "Java sorting visualizer, currently only containing BubbleSort but I'm looking to add more sorting algorithms.",
+    "Java sorting visualizer, currently only containing Bubblesort and Quicksort but I'm looking to add more sorting algorithms.",
   imgStart: false,
   alt: "Java visualizer",
   githubLink: "https://github.com/PaulVLAD22/JavaSortingVisualizer",
   appLink: "",
-  video:require("../../videos/projectThree.mkv").default
+  video:require("../../videos/projectThree/sort-2.mkv").default
+
 };
 export const projectThree = {
   id: 3,
