@@ -16,7 +16,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>My Personal Website</HeroH1>
+        <HeroH1>My Portfolio Website</HeroH1>
         <HeroP>
           Munteanu Vlad Paul, University of Bucharest, Computer Science
         </HeroP>

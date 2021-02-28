@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export const ProjectContainer = styled.div`
   color: white;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "white" : "#010606")};
   @media screen and (max-width: 1500px) {
     padding: 100px 0;
   }

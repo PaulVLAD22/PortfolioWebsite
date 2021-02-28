@@ -6,7 +6,7 @@ export const EducationContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f9f9f9;
+  background: white;
   padding-bottom: 50px;
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -37,7 +37,7 @@ export const EducationCard = styled.div`
   border-radius: 10px;
   max-height: 340px;
   padding: 48px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.3);
 `;
 
 export const EducationIcon = styled.img`

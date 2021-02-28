@@ -15,9 +15,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" component={Home} exact></Route>
-        <Route path="/projects" component={ProjectsPage} exact></Route>
+        <Route path="/projects" component={ProjectsPage} basename={process.env.PUBLIC_URL} ></Route>
       </Switch>
-      <Footer></Footer>
+      <Footer/>
     </Router>
   );
 }
