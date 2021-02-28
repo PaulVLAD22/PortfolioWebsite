@@ -127,6 +127,7 @@ export const Video = styled.video`
   max-width:100%;
   max-height:100%;
   border-radius: 15px;
+  object-fit:fill;
 `
 
 export const SocialIconLink = styled.a`

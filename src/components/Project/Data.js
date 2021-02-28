@@ -34,8 +34,8 @@ export const projectOne = {
 };
 export const projectTwo = {
   id: 2,
-  lightBg: false,
-  lightText: true,
+  lightBg: true,
+  lightText: false,
   topLine: "Sorting Visualizer",
   frontEnd: "java.swing",
   backEnd: "Java",
@@ -45,34 +45,12 @@ export const projectTwo = {
   alt: "Java visualizer",
   githubLink: "https://github.com/PaulVLAD22/JavaSortingVisualizer",
   appLink: "",
-  video:require("../../videos/projectThree.mp4").default
-};
-export const projectTwo = {
-  id: 2,
-  lightBg: true,
-  lightText: false,
-  topLine: "To-do Tasks Website",
-  frontEnd: "HTML/CSS/JS",
-  backEnd: "PHP/MySQL",
-  description:
-    "Responsive to-do list type website. Each account has 3 sections: active tasks, private tasks and completed tasks. By providing a user's username (peeking) you can't see his private tasks but you can see his active and completed ones.",
-  imgStart: false,
-  img: [
-    require("../../images/projectTwo/img-1.png").default,
-    require("../../images/projectTwo/img-2.png").default,
-  ],
-  imgLinks: [
-    "https://i.imgur.com/fRBIKrf.png",
-    "https://i.imgur.com/vaFsQnH.png",
-  ],
-  alt: "To-do Tasks Website",
-  githubLink: "//www.github.com/PaulVLAD22/TechToDo---Website",
-  appLink: "",
+  video:require("../../videos/projectThree.mkv").default
 };
 export const projectThree = {
   id: 3,
-  lightBg: true,
-  lightText: false,
+  lightBg: false,
+  lightText: true,
   topLine: "To-do Tasks Website",
   frontEnd: "HTML/CSS/JS",
   backEnd: "PHP/MySQL",
