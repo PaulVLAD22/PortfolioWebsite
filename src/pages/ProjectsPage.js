@@ -1,5 +1,5 @@
 import React from "react";
-import { projectOne, projectTwo } from "../components/Project/Data";
+import { projectOne, projectTwo, projectThree } from "../components/Project/Data";
 import Project from "../components/Project";
 
 const ProjectsPage = () => {
@@ -7,6 +7,7 @@ const ProjectsPage = () => {
     <>
       <Project {...projectOne}></Project>
       <Project {...projectTwo}></Project>
+      <Project {...projectThree}></Project>
     </>
   );
 };

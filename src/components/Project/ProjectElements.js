@@ -122,6 +122,13 @@ export const Img = styled.img`
   border-radius: 15px;
   cursor: pointer;
 `;
+
+export const Video = styled.video`
+  max-width:100%;
+  max-height:100%;
+  border-radius: 15px;
+`
+
 export const SocialIconLink = styled.a`
   margin-left: 20px;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
@@ -149,7 +156,6 @@ export const SlideshowButton = styled.a`
     background-color: rgba(0, 0, 0, 0.8);
   }
 `;
-export const AppLink = styled(Link)``;
 
 export const TopLine = ({ topLine, githubLink, lightText }) => {
   return (

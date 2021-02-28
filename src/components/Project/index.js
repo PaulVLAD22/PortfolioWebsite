@@ -14,7 +14,7 @@ import {
   Img,
   Description,
   SlideshowButton,
-  AppLink,
+  Video
 } from "./ProjectElements";
 
 const Project = ({
@@ -30,6 +30,7 @@ const Project = ({
   imgLinks,
   alt,
   githubLink,
+  video
 }) => {
   var opacity = 0;
 
@@ -86,7 +87,7 @@ const Project = ({
             </TextWrapper>
           </Column1>
           <Column2>
-          {img != [] &&
+          {video==null ?
             <Spring
               from={{ opacity: 0, marginTop: 500 }}
               to={{ opacity: 1, marginTop: 0 }}
@@ -107,6 +108,17 @@ const Project = ({
                   ></Img>
                 </ImgWrap>
               )}
+            </Spring>
+          :
+            <Spring
+            from={{ opacity: 0, marginTop: 500 }}
+            to={{ opacity: 1, marginTop: 0 }}
+            >
+            {(props) => (
+              <ImgWrap style={props} id={"imgWrap" + id}>
+                <Video autoPlay loop muted src={video} type="video/mp4" />
+              </ImgWrap>
+            )}
             </Spring>
           }
           </Column2>
