@@ -94,12 +94,16 @@ const Project = ({
             >
               {(props) => (
                 <ImgWrap style={props} id={"imgWrap" + id}>
+                  {img.length!=1 &&
+                  <>
                   <SlideshowButton onClick={decreaseIndex}>
                     &#10094;
                   </SlideshowButton>
                   <SlideshowButton right={true} onClick={increaseIndex}>
                     &#10095;
                   </SlideshowButton>
+                  </>
+                  }
                   <Img
                     src={img[imgIndex]}
                     alt={alt}

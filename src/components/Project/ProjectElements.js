@@ -12,7 +12,7 @@ export const ProjectContainer = styled.div`
 export const ProjectWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 90vh;
+  height: 100vh;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -27,8 +27,7 @@ export const ProjectRow = styled.div`
   display: grid;
   align-items: center;
   grid-gap: 1rem;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  grid-template-areas:'col1 col2';
 
   @media screen and (max-width: 1400px) {
     grid-template-areas: ${({ imgStart }) =>
@@ -110,7 +109,7 @@ export const Description = styled.p`
 
 export const ImgWrap = styled.div`
   max-width: 100%;
-  height: 100%;
+
   padding: 0 24px;
   position: relative;
   transition: 0.2s linear;
@@ -118,6 +117,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   max-width: 100%;
+  max-height:100%;
   border-radius: 15px;
   cursor: pointer;
 `;
