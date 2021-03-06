@@ -1,6 +1,8 @@
 import React from "react";
 import { ImgWrap } from "./InfoElements";
 import {
+  DescriptionLine,
+  DescriptionWrap,
   InfoWrapper,
   InfoContainer,
   InfoRow,
@@ -9,7 +11,6 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
   BtnWrap,
   Img,
   BtnLink,
@@ -36,7 +37,12 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={!lightText}>{description}</Subtitle>
+                <DescriptionWrap>
+                  {description.map((elem)=>{
+                    return <DescriptionLine darkText={!lightText}>{elem}</DescriptionLine>
+                  })
+                  }
+                </DescriptionWrap>
                 {buttonLabel != "" && (
                   <BtnWrap>
                     <BtnLink to="/projects">{buttonLabel}</BtnLink>

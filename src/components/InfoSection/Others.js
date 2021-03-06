@@ -1,6 +1,8 @@
 import React from "react";
 import { ImgWrap } from "./InfoElements";
 import {
+  DescriptionWrap,
+  DescriptionLine,
   InfoWrapper,
   InfoContainer,
   InfoRow,
@@ -33,7 +35,7 @@ const Others = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle>
+                <DescriptionWrap>
                   <ul>
                     <OtherH2>Programming Courses</OtherH2>
                     <li>3 Month Java Course - Certified by Telecom Academy</li>
@@ -43,7 +45,7 @@ const Others = ({
                     </li>
                   </ul>
                   <br></br>
-                </Subtitle>
+                </DescriptionWrap>
               </TextWrapper>
             </Column1>
             <Column2>

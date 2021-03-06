@@ -16,7 +16,6 @@ export const InfoWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-
   justify-content: center;
 `;
 
@@ -78,13 +77,15 @@ export const Heading = styled.h1`
     font-size: 32px;
   }
 `;
-
-export const Subtitle = styled.p`
-  max-width: 550px;
-  margin-bottom: 35px;
+export const DescriptionWrap = styled.div`
+max-width: 550px;
+margin-bottom: 35px;
+`
+export const DescriptionLine = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "white")};
+  margin-bottom:20px;
 
   @media screen and (max-width: 1000px) {
     max-width: 350px;
@@ -138,3 +139,5 @@ export const BtnLink = styled(LinkR)`
     transform:scale(1.02);
   }
 `;
+
+

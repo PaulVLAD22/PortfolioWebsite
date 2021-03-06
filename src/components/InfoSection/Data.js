@@ -3,10 +3,14 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Programming Languages",
+  topLine: "Programming Skills",
   headline: "Skills",
-  description:
-    "Best at Web development (HTML/CSS/JS-React/PHP), Java, PL/SQL, Object Oriented Programming in general but also have knowledge in C++, R, Python, Functional Programming, Algorithms and Data Strutures.",
+  description:[
+    "Languages: Java, JS-React/PHP, PL/SQL, C++, Python",
+    "Concepts: Object Oriented Programming, Functional Programming, Algorithms and Data Strutures.",
+    "Developer Tools: VS Code, Jetbrains Suite",
+    "Interests: Flutter, React Native"
+  ],
   buttonLabel: "",
   imgStart: true,
   img: require("../../images/svg-4.svg").default,
@@ -21,8 +25,9 @@ export const homeObjTwo = {
   lightTextDesc: false,
   topLine: "Schoolwork/Peronal Projects",
   headline: "Projects",
-  description:
-    "In my free time I like expanding the array of skills I get from university by learning different technologies online and testing my obtained knowledge creating projects.",
+  description:[
+    "In my free time I like expanding the array of skills I get from university by learning different technologies online and testing my obtained knowledge creating projects."
+  ],
   buttonLabel: "Check Out",
   imgStart: false,
   img: require("../../images/svg-5.svg").default,

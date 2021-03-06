@@ -58,6 +58,7 @@ export const HeroH1 = styled.h1`
   font-size: 3.5rem;
   font-style: italic;
   text-align: center;
+  font-weight:550;
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
