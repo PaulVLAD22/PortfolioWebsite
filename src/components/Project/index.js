@@ -20,7 +20,6 @@ import {
 const Project = ({
   id,
   lightBg,
-  imgStart,
   topLine,
   lightText,
   frontEnd,
@@ -69,7 +68,7 @@ const Project = ({
   return (
     <ProjectContainer lightBg={lightBg}>
       <ProjectWrapper>
-        <ProjectRow imgStart={imgStart}>
+        <ProjectRow>
           <Column1>
             <TextWrapper>
               <TopLine

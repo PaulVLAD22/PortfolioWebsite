@@ -74,8 +74,7 @@ export const NavLinks = styled(LinkS)`
   &:hover {
     transform: scale(1.2);
     transition: all 0.15s ease-in-out;
-    border-bottom: ${({ homeButton }) =>
-      !homeButton ? "5px solid #1B949A;" : ""};
+    border-bottom:5px solid #1B949A;
   }
 
   &.active {

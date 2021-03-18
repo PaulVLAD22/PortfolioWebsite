@@ -6,13 +6,16 @@ export const ProjectContainer = styled.div`
   color: white;
   background: ${({ lightBg }) => (lightBg ? "#F8F8F8" : "#010606")};
   @media screen and (max-width: 1400px) {
-    padding: 100px 0;
+    padding:50px 0 50px 0;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 20px 0 50px 0;
   }
 `;
 export const ProjectWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 100vh;
+  min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -30,8 +33,7 @@ export const ProjectRow = styled.div`
   grid-template-areas:'col1 col2';
 
   @media screen and (max-width: 1400px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    grid-template-areas:'col1' 'col2';
     grid-gap: 0rem;
   }
 `;
@@ -40,7 +42,6 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
-  grid-template: 1fr;
   @media screen and (max-width: 1000px) {
     padding: 0px 50px;
     
@@ -89,7 +90,7 @@ export const TopLineP = styled.p`
     font-size:15px;
   }
   @media screen and (max-width:400px){
-    font-size:13px;
+    font-size:10px;
   }
 `;
 
@@ -104,14 +105,15 @@ export const ProjectH2 = styled.h2`
     font-size:18px;
   }
   @media screen and (max-width:500px){
-    font-size:18px;
+    font-size:16px;
   }
   @media screen and (max-width:400px){
-    font-size:12px;
+    font-size:14px;
   }
 `;
 
 export const Description = styled.p`
+  max-width:min(550px,100%);
   text-align:left;
   margin-top: 35px;
   margin-bottom: 35px;
@@ -132,7 +134,6 @@ export const Description = styled.p`
 
 export const ImgWrap = styled.div`
   max-width: min(100%,1100px);
-
   padding: 0 24px;
   position: relative;
   transition: 0.2s linear;
