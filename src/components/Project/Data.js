@@ -31,21 +31,6 @@ export const projectOne = {
   githubLink: "//www.github.com/PaulVLAD22/e-commerce-Website"
 };
 
-export const projectTwo = {
-  id: 2,
-  lightBg: false,
-  lightText: true,
-  topLine: "Sorting Visualizer",
-  frontEnd: "java.swing",
-  backEnd: "Java",
-  description:
-    "Java sorting visualizer, currently only containing Bubblesort and Quicksort but I'm looking to add more sorting algorithms.",
-  alt: "Java visualizer",
-  githubLink: "https://github.com/PaulVLAD22/JavaSortingVisualizer",
-  appLink: "",
-  video:require("../../videos/projectThree/sort-2.mkv").default
-
-};
 export const projectThree = {
   id: 3,
   lightBg: false,
@@ -68,12 +53,12 @@ export const projectThree = {
 };
 export const projectFour = {
   id:4,
-  lightBg:false,
-  lightText:true,
+  lightBg:true,
+  lightText:false,
   topLine:"Coronvirus Tracker",
   frontEnd: "Boostrap",
   backEnd:"Java Spring",
-  description:"Java (Spring) Web app that displays today's number of coronavirus cases getting data from a Github repository csv file",
+  description:"Java (Spring) Web app that displays today's number of coronavirus cases getting data from a Github repository csv file. The purpose of this project was for me to try out java libraries, having only worked with vanilla java beforehand.",
   img: [
     require("../../images/projectFour/img-1.png").default
   ],
@@ -84,4 +69,4 @@ export const projectFour = {
   githubLink: "https://github.com/PaulVLAD22/Spring-CoronavirusTracker"
 }
 
-export const projects = [projectOne,projectFour,projectThree,projectTwo]
+export const projects = [projectOne,projectFour,projectThree]

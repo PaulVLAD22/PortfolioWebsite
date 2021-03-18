@@ -105,6 +105,7 @@ const Project = ({
                   </>
                   }
                   <Img
+                    lightBg={lightBg}
                     src={img[imgIndex]}
                     alt={alt}
                     id="img"

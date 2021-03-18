@@ -4,8 +4,8 @@ import { FaGithub } from "react-icons/fa";
 
 export const ProjectContainer = styled.div`
   color: white;
-  background: ${({ lightBg }) => (lightBg ? "white" : "#010606")};
-  @media screen and (max-width: 1500px) {
+  background: ${({ lightBg }) => (lightBg ? "#F8F8F8" : "#010606")};
+  @media screen and (max-width: 1400px) {
     padding: 100px 0;
   }
 `;
@@ -41,9 +41,9 @@ export const Column1 = styled.div`
   padding: 0 15px;
   grid-area: col1;
   grid-template: 1fr;
-  display: flex;
   @media screen and (max-width: 1000px) {
     padding: 0px 50px;
+    
   }
 `;
 
@@ -51,64 +51,87 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 `;
 
 export const TextWrapper = styled.div`
+  display:flex;
+  flex-direction:column;
   max-width: 550px;
   padding-top: 0;
   padding-bottom: 60px;
-  @media screen and (max-width: 1200px) {
-    max-width: 450px;
+  
+  @media screen and (max-width: 1400px) {
+    position:relative;
+    margin:auto;
+    max-width: 90%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
   }
+  
 `;
 
 export const TopLineP = styled.p`
   color: #1b949a;
-  font-size: 16px;
+  font-size: 28px;
   line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
-  margin-bottom: 16px;
-`;
-export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  margin-bottom: 30px;
+  @media screen and (max-width:700px){
+    font-size:20px;
+  }
+  @media screen and (max-width:500px){
+    font-size:15px;
+  }
+  @media screen and (max-width:400px){
+    font-size:13px;
   }
 `;
+
 export const ProjectH2 = styled.h2`
-  font-size: 18px;
+
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  margin-bottom:10px;
+  margin-right:10px;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  @media screen and (max-width:700px){
+    font-size:18px;
+  }
+  @media screen and (max-width:500px){
+    font-size:18px;
+  }
+  @media screen and (max-width:400px){
+    font-size:12px;
+  }
 `;
 
 export const Description = styled.p`
-  max-width: 550px;
+  text-align:left;
   margin-top: 35px;
   margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 28px;
   color: ${({ darkText }) => (darkText ? "#010606" : "white")};
 
-  @media screen and (max-width: 1000px) {
-    max-width: 350px;
+  @media screen and (max-width:700px){
+    font-size:14px;
+    line-height:26px;
+  }
+  @media screen and (max-width:400px){
+    font-size:12px;
+    line-height:20px;
   }
 
-  @media screen and (max-width: 768px) {
-    max-width: 400px;
-  }
-  @media screen and (max-width: 500px) {
-    max-width: 350px;
-  }
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 100%;
+  max-width: min(100%,1100px);
 
   padding: 0 24px;
   position: relative;
@@ -120,6 +143,8 @@ export const Img = styled.img`
   max-height:100%;
   border-radius: 15px;
   cursor: pointer;
+  border-color:${({lightBg})=>(lightBg ? "black":"white")};
+  box-shadow:${({lightBg})=>(lightBg ? "0 1px 15px rgb(0,0,0,0.7)":"")};
 `;
 
 export const Video = styled.video`

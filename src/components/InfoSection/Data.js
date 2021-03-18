@@ -40,7 +40,7 @@ export const homeObjThree = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Programming Courses",
+  topLine: "Other Accomplishments",
   headline: "Others",
   description: "",
   buttonLabel: "",

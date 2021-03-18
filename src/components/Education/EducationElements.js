@@ -49,7 +49,6 @@ export const EducationIcon = styled.img`
 export const EducationH1 = styled.h1`
   font-size: 2.5rem;
   color: black;
-  font-weight: 400;
   margin-bottom: 64px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;

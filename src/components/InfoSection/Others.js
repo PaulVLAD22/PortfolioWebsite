@@ -11,7 +11,6 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
   Img,
   OtherH2,
 } from "./InfoElements";

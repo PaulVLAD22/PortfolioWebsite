@@ -65,6 +65,9 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  ::after{
+    content:"...";
+  }
 `;
 export const Heading = styled.h1`
   margin-bottom: 24px;
@@ -78,8 +81,8 @@ export const Heading = styled.h1`
   }
 `;
 export const DescriptionWrap = styled.div`
-max-width: 550px;
-margin-bottom: 35px;
+  max-width: 550px;
+  margin-bottom: 35px;
 `
 export const DescriptionLine = styled.p`
   font-size: 18px;
