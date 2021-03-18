@@ -55,7 +55,7 @@ export const projectFour = {
   id:4,
   lightBg:true,
   lightText:false,
-  topLine:"Coronvirus Tracker",
+  topLine:"Coronavirus Tracker",
   frontEnd: "Boostrap",
   backEnd:"Java Spring",
   description:"Java (Spring) Web app that displays today's number of coronavirus cases getting data from a Github repository csv file. The purpose of this project was for me to try out java libraries, having only worked with vanilla java beforehand.",
