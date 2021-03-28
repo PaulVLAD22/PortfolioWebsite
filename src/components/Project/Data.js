@@ -36,8 +36,8 @@ export const projectTwo={
   lightBg: true,
   lightText: false,
   topLine: "Tripsaver Website",
-  frontEnd: "React.js/ChakraUI",
-  backEnd: "-",
+  frontEnd: "React.js/Typescript/ChakraUI",
+  backEnd: "Axios",
   description:
     "Frontend for a website on which you have different locations associated to your account and by clicking on the map you can add more places you want to visit or remove the ones you have already been to.",
   img: [
