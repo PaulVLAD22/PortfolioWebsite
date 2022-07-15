@@ -113,7 +113,7 @@ export const projectFive = {
     "https://ibb.co/S6KdrtF",
   ],
   alt: "Coronavirus Tracker Website",
-  githubLink: "https://github.com/PaulVLAD22/Spring-CoronavirusTracker",
+  githubLink: "https://github.com/PaulVLAD22/MedVlad--University",
 };
 export const projects = [
   projectFive,
