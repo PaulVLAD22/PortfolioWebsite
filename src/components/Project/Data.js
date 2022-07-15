@@ -28,10 +28,10 @@ export const projectOne = {
     "https://i.imgur.com/LUYlgcQ.png",
   ],
   alt: "E-Commerce Website",
-  githubLink: "//www.github.com/PaulVLAD22/e-commerce-Website"
+  githubLink: "//www.github.com/PaulVLAD22/e-commerce-Website",
 };
 
-export const projectTwo={
+export const projectTwo = {
   id: 3,
   lightBg: true,
   lightText: false,
@@ -43,16 +43,16 @@ export const projectTwo={
   img: [
     "https://i.imgur.com/dCJL85i.png",
     "https://i.imgur.com/fs68xNG.png",
-    "https://i.imgur.com/KWj4gWa.png"
-
+    "https://i.imgur.com/KWj4gWa.png",
   ],
   imgLinks: [
     "https://i.imgur.com/dCJL85i.png",
     "https://i.imgur.com/fs68xNG.png",
-    "https://i.imgur.com/KWj4gWa.png"
+    "https://i.imgur.com/KWj4gWa.png",
   ],
   alt: "Tripsaver Website",
-  githubLink: "https://github.com/PaulVLAD22/TripSaver-Website/tree/main/tripsaver"
+  githubLink:
+    "https://github.com/PaulVLAD22/TripSaver-Website/tree/main/tripsaver",
 };
 
 export const projectThree = {
@@ -73,24 +73,52 @@ export const projectThree = {
     "https://i.imgur.com/vaFsQnH.png",
   ],
   alt: "To-do Tasks Website",
-  githubLink: "//www.github.com/PaulVLAD22/TechToDo---Website"
+  githubLink: "//www.github.com/PaulVLAD22/TechToDo---Website",
 };
 export const projectFour = {
-  id:4,
-  lightBg:false,
-  lightText:true,
-  topLine:"Coronavirus Tracker",
+  id: 4,
+  lightBg: false,
+  lightText: true,
+  topLine: "Coronavirus Tracker",
   frontEnd: "Boostrap",
-  backEnd:"Java Spring",
-  description:"Java (Spring) Web app that displays today's number of coronavirus cases getting data from a Github repository csv file. The purpose of this project was for me to try out java libraries, having only worked with vanilla java beforehand.",
+  backEnd: "Java Spring",
+  description:
+    "Java (Spring) Web app that displays today's number of coronavirus cases getting data from a Github repository csv file. The purpose of this project was for me to try out java libraries, having only worked with vanilla java beforehand.",
+  img: [require("../../images/projectFour/img-1.png").default],
+  imgLinks: ["https://i.imgur.com/vpUtM7x.png"],
+  alt: "Coronavirus Tracker Website",
+  githubLink: "https://github.com/PaulVLAD22/Spring-CoronavirusTracker",
+};
+export const projectFive = {
+  id: 5,
+  lightBg: true,
+  lightText: false,
+  topLine: "Medical Platform",
+  frontEnd: "React, Chakra-UI",
+  backEnd: "Java Spring",
+  description:
+    "Medical platform containing 3 big sections: a forum page, a chat page and a page which provides instant diagnosis based on a a selected group of symptoms that uses the data posted on the forum page.",
   img: [
-    require("../../images/projectFour/img-1.png").default
+    require("../../images/projectFive/generateDiagnosis.png").default,
+    require("../../images/projectFive/form.png").default,
+    require("../../images/projectFive/chat.png").default,
+    require("../../images/projectFive/profile.png").default,
+    require("../../images/projectFive/admin.png").default,
   ],
-  imgLinks:[
-    "https://i.imgur.com/vpUtM7x.png"
+  imgLinks: [
+    "https://ibb.co/BqhF3PK",
+    "https://ibb.co/GcfjkTK",
+    "https://ibb.co/5FnYgkj",
+    "https://ibb.co/0VGjM7P",
+    "https://ibb.co/S6KdrtF",
   ],
-  alt:"Coronavirus Tracker Website",
-  githubLink: "https://github.com/PaulVLAD22/Spring-CoronavirusTracker"
-}
-
-export const projects = [projectOne,projectTwo,projectFour,projectThree]
+  alt: "Coronavirus Tracker Website",
+  githubLink: "https://github.com/PaulVLAD22/Spring-CoronavirusTracker",
+};
+export const projects = [
+  projectFive,
+  projectOne,
+  projectTwo,
+  projectFour,
+  projectThree,
+];
