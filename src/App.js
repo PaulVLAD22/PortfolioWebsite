@@ -12,12 +12,12 @@ function App() {
     setIsOpen(!isOpen);
   };
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" component={Home} exact></Route>
-        <Route path="/projects" component={ProjectsPage} basename={process.env.PUBLIC_URL} ></Route>
+        <Route path="/projects" component={ProjectsPage}></Route>
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
