@@ -4,7 +4,7 @@ export const projectOne = {
   lightText: true,
   topLine: "E-Commerce Website",
   frontEnd: "React, Boostrap",
-  backEnd: "Jquery/PHP/MySQL",
+  backEnd: "PHP/MySQL",
   description:
     "Responsive e-commerce website project created from scratch in order for me to practice React basics, PHP and MySQL.  User accounts can add products to cart, comment on products, rate them and, after entering your details, order them. Admin accounts can add products or remove them.",
   img: [
@@ -37,7 +37,7 @@ export const projectTwo = {
   lightText: false,
   topLine: "Tripsaver Website",
   frontEnd: "React.js/Typescript/ChakraUI",
-  backEnd: "Axios",
+  backEnd: "",
   description:
     "Frontend for a website on which you have different locations associated to your account and by clicking on the map you can add more places you want to visit or remove the ones you have already been to.",
   img: [
