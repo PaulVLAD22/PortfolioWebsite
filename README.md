@@ -1,1 +1,1 @@
-<h1>vladmunteanu.me</h1>
+<h1 style={{color:green}}>vladmunteanu.me</h1>
